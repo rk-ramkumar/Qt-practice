@@ -6,42 +6,68 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>794</width>
-    <height>597</height>
+    <width>1000</width>
+    <height>639</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QWidget" name="horizontalLayoutWidget">
+   <property name="cursor">
+    <cursorShape>ArrowCursor</cursorShape>
+   </property>
+   <widget class="QLabel" name="labelMessage">
     <property name="geometry">
      <rect>
-      <x>260</x>
-      <y>80</y>
-      <width>166</width>
-      <height>80</height>
+      <x>700</x>
+      <y>30</y>
+      <width>191</width>
+      <height>51</height>
      </rect>
     </property>
-    <layout class="QHBoxLayout" name="horizontalLayout">
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>190</y>
+      <width>221</width>
+      <height>181</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <property name="sizeConstraint">
+      <enum>QLayout::SizeConstraint::SetMaximumSize</enum>
+     </property>
      <item>
-      <widget class="QPushButton" name="btnClickme">
+      <widget class="QLabel" name="label">
        <property name="text">
-        <string>Click Me</string>
+        <string>Enter Your Name</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignmentFlag::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEditName">
+       <property name="cursor">
+        <cursorShape>ArrowCursor</cursorShape>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnSubmit">
+       <property name="text">
+        <string>Submit</string>
        </property>
       </widget>
      </item>
     </layout>
-   </widget>
-   <widget class="QDial" name="dial">
-    <property name="geometry">
-     <rect>
-      <x>140</x>
-      <y>270</y>
-      <width>151</width>
-      <height>111</height>
-     </rect>
-    </property>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
@@ -49,7 +75,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>794</width>
+     <width>1000</width>
      <height>21</height>
     </rect>
    </property>

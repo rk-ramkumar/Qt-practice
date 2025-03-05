@@ -14,9 +14,17 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-void MainWindow::on_btnClickme_pressed()
+void MainWindow::on_btnSubmit_clicked()
 {
-    QMessageBox::information(this, "Hello", "Button Clicked!");
-}
+    QString name = ui->lineEditName->text();
 
+    if (name.isEmpty())
+    {
+        ui->labelMessage->setText("Please enter your name.");
+    }
+    else
+    {
+        ui->labelMessage->setText("Hello, " + name + "!");
+    }
+}
 
