@@ -14,7 +14,7 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-void MainWindow::_on_btnClickMe_pressed()
+void MainWindow::on_btnClickme_pressed()
 {
     QMessageBox::information(this, "Hello", "Button Clicked!");
 }
