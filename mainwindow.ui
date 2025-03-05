@@ -14,17 +14,33 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QWidget" name="horizontalLayoutWidget">
     <property name="geometry">
      <rect>
-      <x>60</x>
-      <y>120</y>
-      <width>83</width>
-      <height>29</height>
+      <x>260</x>
+      <y>80</y>
+      <width>166</width>
+      <height>80</height>
      </rect>
     </property>
-    <property name="text">
-     <string>PushButton</string>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="btnClickme">
+       <property name="text">
+        <string>Click Me</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QDial" name="dial">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>270</y>
+      <width>151</width>
+      <height>111</height>
+     </rect>
     </property>
    </widget>
   </widget>
@@ -37,14 +53,30 @@
      <height>21</height>
     </rect>
    </property>
-   <widget class="QMenu" name="menuHello">
+   <widget class="QMenu" name="menuHome">
     <property name="title">
-     <string>Hello World</string>
+     <string>Home</string>
     </property>
    </widget>
-   <addaction name="menuHello"/>
+   <widget class="QMenu" name="menuStore">
+    <property name="title">
+     <string>Store</string>
+    </property>
+   </widget>
+   <addaction name="menuHome"/>
+   <addaction name="menuStore"/>
   </widget>
-  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QStatusBar" name="statusbar">
+   <property name="layoutDirection">
+    <enum>Qt::LayoutDirection::LeftToRight</enum>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="sizeGripEnabled">
+    <bool>true</bool>
+   </property>
+  </widget>
  </widget>
  <resources/>
  <connections/>
